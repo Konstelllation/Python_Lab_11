@@ -122,13 +122,25 @@ def load_students(file_name):
                     ]
                 },
                 "z": {
-                    "type": "string",
-                    "title": "The z Schema",
-                    "examples": [
-                        "2 3 4 5 5",
-                        "5 4 5 4 3"
-                    ]
-                }
+                    "type": "array",
+                        "items": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "type": "integer"
+                            }
+                        ]
+                    }
             },
             "examples": [{
                 "name": "Горшков В.И.",
